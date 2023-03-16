@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="no-js ie9 fixed-layout" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Mobile Meta -->
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <!-- Site Meta -->
+    <title>RecSys</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Custom & Default Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- LOADER -->
+    <div id="preloader">
+      <img class="preloader" src="images/loader.gif" alt="" />
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <div id="wrapper">
+      <!-- BEGIN # MODAL LOGIN -->
+      <div
+        class="modal fade"
+        id="login-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+        style="display: none"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Begin # DIV Form -->
+            <div id="div-forms">
+              <form id="login-form">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span class="flaticon-add" aria-hidden="true"></span>
+                </button>
+                <div class="modal-body">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="What you are looking for?"
+                    required
+                  />
+                </div>
+              </form>
+              <!-- End # Login Form -->
+            </div>
+            <!-- End # DIV Form -->
+          </div>
+        </div>
+      </div>
+      <!-- END # MODAL LOGIN -->
+
+      <header class="header">
+        <div class="topbar clearfix">
+          <div class="container">
+            <div class="row-fluid">
+              <div class="col-md-6 col-sm-6 text-left"></div>
+              <!-- end left -->
+              <div class="col-md-6 col-sm-6 hidden-xs text-right">
+                <div class="social">
+                  <a
+                    class="facebook"
+                    href="#"
+                    data-tooltip="tooltip"
+                    data-placement="bottom"
+                    title="Facebook"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                  <a
+                    class="twitter"
+                    href="#"
+                    data-tooltip="tooltip"
+                    data-placement="bottom"
+                    title="Twitter"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                  <a
+                    class="google"
+                    href="#"
+                    data-tooltip="tooltip"
+                    data-placement="bottom"
+                    title="Google Plus"
+                    ><i class="fa fa-google-plus"></i
+                  ></a>
+                  <a
+                    class="linkedin"
+                    href="#"
+                    data-tooltip="tooltip"
+                    data-placement="bottom"
+                    title="Linkedin"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                  <a
+                    class="pinterest"
+                    href="#"
+                    data-tooltip="tooltip"
+                    data-placement="bottom"
+                    title="Pinterest"
+                    ><i class="fa fa-pinterest"></i
+                  ></a>
+                </div>
+                <!-- end social -->
+              </div>
+              <!-- end left -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end container -->
+        </div>
+        <!-- end topbar -->
+
+        <div class="container">
+          <nav class="navbar navbar-default yamm">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#navbar"
+                aria-expanded="false"
+                aria-controls="navbar"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="logo-normal">
+                <a class="navbar-brand" href="index.html"
+                  ><img src="images/logo.png" alt=""
+                /></a>
+              </div>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown yamm-fw yamm-half">
+                  <a
+                    href="#"
+                    data-toggle="dropdown"
+                    class="dropdown-toggle active"
+                    >Course content <b class="fa fa-angle-down"></b
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div class="yamm-content clearfix">
+                        <div class="row-fluid">
+                          <div class="col-md-6 col-sm-6">
+                            <h4>Topics</h4>
+                            <ul>
+                              <li><a href="#">Introduction to RecSys</a></li>
+                              <li><a href="#">SOTA RecSys Methods</a></li>
+                              <li><a href="#">Content-Based RecSys</a></li>
+                              <li>
+                                <a href="#">Collaborative Filtering RecSys</a>
+                              </li>
+                              <li><a href="#">Hybrid RecSys</a></li>
+                              <li>
+                                <a href="#">Building a RecSys Pipeline</a>
+                              </li>
+                              <li><a href="#">Evaluating RecSys</a></li>
+                              <li>
+                                <a href="#">Modern RecSys & Open Chalenges</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-md-6 col-sm-6">
+                            <div class="menu-widget text-center">
+                              <div class="image-wrap entry">
+                                <img
+                                  src="upload/course_01.jpg"
+                                  alt=""
+                                  class="img-responsive"
+                                />
+                                <div class="magnifier">
+                                  <a href="#" title=""
+                                    ><i class="flaticon-add"></i
+                                  ></a>
+                                </div>
+                              </div>
+                              <!-- end image-wrap -->
+                              <h5><a href="#">An overview</a></h5>
+
+                              <a href="#" class="menu-button">View Course</a>
+                            </div>
+                            <!-- end widget -->
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="events.html">Program</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="iconitem">
+                  <a href="#" data-toggle="modal" data-target="#login-modal"
+                    ><i class="fa fa-search"></i
+                  ></a>
+                </li>
+                <li class="iconitem">
+                  <a class="shopicon" href="events.html"
+                    ><i class="fa fa-shopping-basket"></i> &nbsp;(0)</a
+                  ><a href="#"><img src="upload/logo_un.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- end navbar -->
+        </div>
+        <!-- end container -->
+      </header>
+
+      <section
+        class="parallax event-section"
+        ßßßßßß
+        data-stellar-background-ratio="0.1"
+        style="background-image: url('upload/parallax_01.jpeg')"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="tagline-message event-title text-center">
+                <h3>Recommender Systems: an overview</h3>
+              
+                <a href="https://moodle.uni.lu/course/index.php?categoryid=88"target="_blank" class="btn btn-primary">Enroll Now</a>
+              </div>
+            </div>
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- end section -->
+
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title text-center">
+            <h3>Program</h3>
+            <p style="color: gray">
+              <b
+                >May 22 - 26,2023, Belval campus (MSA), University of
+                Luxembourg</b
+              ><br>
+              - Limited number of participants. <br>
+
+              Enrolment via Moodle opens on 30/03/2023 
+            </p><br>
+            <a href="https://moodle.uni.lu/course/index.php?categoryid=88"target="_blank" class="btn btn-primary">Enroll Now</a>
+          </div>
+          <!-- end title -->
+
+          <div class="row text-center">
+         
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+
+
+      <section class="section gb nopadtop">
+        <div class="container">
+          <div class="row event-boxes">
+            <div class="col-md-4">
+              <div class="box m30">
+                <img src="upload/blog_01.jpg" alt="" class="img-responsive" />
+                <div class="event-desc">
+                  <small>Day 1</small>
+                  <h4>Introduction to Recommender Systems</h4>
+                  <p>
+                    <li>Personalisation: The Big Picture </li>
+                    <li> Overview of SOTA RecSys Methods (ML, DL, RL) based
+                    approaches.</li>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-md-4">
+              <div class="box m30">
+                <img src="upload/blog_02.jpg" alt="" class="img-responsive" />
+                <div class="event-desc">
+                  <small>Day 2</small>
+                  <h4>Content-Based (CB) & Collaborative Filtering (CF) </h4>
+                  <p>
+                    <li>Lecture</li>
+                    <li>Invited talk</li>
+                    <li>Hands-on Case-Studies (CB & CF)</li>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-md-4">
+              <div class="box m30">
+                <img src="upload/blog_03.jpg" alt="" class="img-responsive" />
+                <div class="event-desc">
+                  <small>Day 3</small>
+                  <h4>Hybrid Approaches & Reinforcement Learning (RL) based RecSys </h4>
+                  <p>
+                    <li>Lecture</li>
+                    <li>Invited talk</li>
+                    <li>Hands-on Case-Studies (Hybrid & RL)</li>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-md-4">
+              <div class="box m30">
+                <img src="upload/blog_04.jpg" alt="" class="img-responsive" />
+                <div class="event-desc">
+                  <small>Day 4</small>
+                  <h4>Modern RecSys & Open Chalenges</h4>
+                  <p>
+                    <li>Lecture</li>
+                    <li>Course project topics</li>
+                    <li>Hands-on (Course Project)</li>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-md-4">
+              <div class="box m30">
+                <img src="upload/blog_05.jpg" alt="" class="img-responsive" />
+                <div class="event-desc">
+                  <small>Day 5</small>
+                  <h4>Project presentation & Closing</h4>
+                  <p>
+                    <p>
+                      <li>Invited talk</li>
+                      <li>Student Presentations</li>
+                    </p>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-title text-center">
+            <h3>Meet Our Speakers</h3>
+            <p>
+          
+            </p>
+          </div>
+          <!-- end title -->
+
+          <div class="row text-center">
+            <div class="col-md-4 col-sm-6">
+              <div class="teammembers">
+                <div class="entry">
+                  <img src="upload/01_team.png" alt="" class="img-responsive" />
+                  <div class="magnifier">
+                    <div class="visible-buttons1 teambuttons">
+                      <p>
+                        <b>Course Instructor</b><br>
+                      </p>
+                      <div class="social-links">
+                        <a href="https://www.linkedin.com/in/bekyilma/"target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://twitter.com/bek_yilma"target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://scholar.google.com/citations?user=Kvk-7FwAAAAJ&hl=en"target="_blank"><i class="fa fa-google-plus"></i></a>
+                      </div>
+                      <!-- end social -->
+                    </div>
+                  </div>
+                </div>
+                <!-- end box -->
+                <div class="teamdesc">
+                  <h4> <a href="https://bekyilma.github.io/"target="_blank">Dr. Bereket YILMA</a></h4>
+                  <p>University of Luxembourg, Luxembourg</p><br>
+
+                  <b>Course Instructor</b>
+                </div>
+                <!-- end teamdesc -->
+              </div>
+              <!-- end teammembers -->
+            </div>
+            <!-- end col -->
+            
+
+
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title text-center">
+            <h4>Invited Talks</h4>
+            <p>
+          
+            </p>
+          </div>
+          <!-- end title -->
+
+          <div class="row text-center">
+            <div class="col-md-4 col-sm-6">
+              <div class="teammembers">
+                <div class="entry">
+                  <img src="upload/06_team.png" alt="" class="img-responsive" />
+                  <div class="magnifier">
+                    <div class="visible-buttons1 teambuttons">
+                      <p>
+                        <b>Invited talk </b><br>
+                        Improving Personalized Explanation Generation through Visualization
+                      </p>
+                      <div class="social-links">
+                        <a href="https://lileipisces.github.io/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://lileipisces.github.io/"><i class="fa fa-twitter"></i></a>
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=hRDUMnQAAAAJ"><i class="fa fa-google-plus"></i></a>
+                      </div>
+                      <!-- end social -->
+                    </div>
+                  </div>
+                </div>
+                <!-- end box -->
+                <div class="teamdesc">
+                  <h4><a href="https://lileipisces.github.io/"target="_blank">Dr. Lei Li</a></h4>
+                  <p>Hong Kong Baptist University (HKBU)</p>
+                </div>
+                <!-- end teamdesc -->
+              </div>
+              <!-- end teammembers -->
+            </div>
+            <!-- end col -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="teammembers">
+                <div class="entry">
+                  <img src="upload/02_team.png" alt="" class="img-responsive" />
+                  <div class="magnifier">
+                    <div class="visible-buttons1 teambuttons">
+                      <p>
+                        <b>Invited talk </b><br>
+                        Explainability in Recommender Systems
+                      </p>
+                      <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ludovik-coba-8b96a0154/"target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://mobile.twitter.com/ludoviku"target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://scholar.google.at/citations?user=gsj8LcwAAAAJ&hl=en"target="_blank"><i class="fa fa-google-plus"></i></a>
+                      </div>
+                      <!-- end social -->
+                    </div>
+                  </div>
+                </div>
+                <!-- end box -->
+                <div class="teamdesc">
+                  <h4><a href="https://www.linkedin.com/in/ludovik-coba-8b96a0154/"target="_blank">Dr. Ludovik Coba</a></h4>
+                  <p>Expedia Group, United Kingdom </p>
+                </div>
+                <!-- end teamdesc -->
+              </div>
+              <!-- end teammembers -->
+            </div>
+            <!-- end col -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="teammembers">
+                <div class="entry">
+                  <img src="upload/03_team.png" alt="" class="img-responsive" />
+                  <div class="magnifier">
+                    <div class="visible-buttons1 teambuttons">
+                      <p>
+                        <b>Invited talk </b><br>
+                        Language models in Recommender Systems
+                      </p>
+                      <div class="social-links">
+                        <a href="https://www.linkedin.com/in/yuhui-zhang-223325121/"target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://twitter.com/Zhang_Yu_hui"target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://scholar.google.com/citations?user=X-Agfu8AAAAJ&hl=en"target="_blank"><i class="fa fa-google-plus"></i></a>
+                      </div>
+                      <!-- end social -->
+                    </div>
+                  </div>
+                </div>
+                <!-- end box -->
+                <div class="teamdesc">
+                  <h4><a href="https://cs.stanford.edu/~yuhuiz/"target="_blank">Yuhui Zhang</a></h4>
+                  <p>Amazon AWS AI Labs & Stanford University, USA </p>
+                </div>
+                <!-- end teamdesc -->
+              </div>
+              <!-- end teammembers -->
+            </div>
+            <!-- end col -->
+
+
+
+            
+
+
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+
+
+
+
+  
+
+      <div class="copyrights">
+        <div class="container">
+          <div class="clearfix">
+            <div class="pull-left">
+              <div class="cop-logo">
+                <a href="#"><img src="images/logo.png" alt="" /></a>
+              </div>
+            </div>
+
+            <div class="pull-right">
+              <div class="footer-links">
+                <ul class="list-inline">
+                  <li>
+                   ©2023 Bereket A. YILMA.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end container -->
+      </div>
+      <!-- end copy -->
+    </div>
+    <!-- end wrapper -->
+
+    <!-- jQuery Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- VIDEO BG PLUGINS -->
+    <script src="js/videobg.js"></script>
+  </body>
+</html>
